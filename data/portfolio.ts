@@ -231,7 +231,7 @@ export const portfolioData = {
                 "A static game developed for Android.",
                 "Available on Google Play Store.",
             ],
-            link: "https://play.google.com/store/apps/details?id=com.bhanit.games.mytapthegrey&hl=en_IN",
+            link: "/tapthegrey",
         },
     ],
     articles: [
