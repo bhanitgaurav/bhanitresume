@@ -93,7 +93,7 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">Hello, I&apos;m</h2>
+                    <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">Hi, I&apos;m</h2>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                         {personalInfo.name}
                     </h1>
