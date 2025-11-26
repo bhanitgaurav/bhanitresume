@@ -8,9 +8,9 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bhanit Gaurav - Mobile App Developer | Android & Flutter",
-  description: "Portfolio of Bhanit Gaurav, a Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP. View projects, skills, and experience.",
-  keywords: ["bhanit", "bhanitgaurav", "bhanit android", "bhanit flutter", "bhanit kotlin", "mobile developer", "android developer", "flutter developer"],
+  title: "Bhanit - Mobile App Developer | Bhanit Gaurav",
+  description: "Portfolio of Bhanit (Bhanit Gaurav), a Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP. View projects, skills, and experience.",
+  keywords: ["bhanit", "bhanit gaurav", "bhanit android", "bhanit flutter", "bhanit kotlin", "mobile developer", "android developer", "flutter developer"],
   authors: [{ name: "Bhanit Gaurav", url: "https://bhanit.com" }],
   creator: "Bhanit Gaurav",
   openGraph: {

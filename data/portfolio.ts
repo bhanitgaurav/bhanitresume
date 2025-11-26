@@ -13,7 +13,7 @@ export const portfolioData = {
         whatsapp: "https://wa.me/918419848105",
         resume: "https://drive.google.com/file/d/1Yd_wyw_RXcgVpUYpnEYJ_KI7IEzjpy_G/view?usp=drivesdk",
         summary:
-            "Versatile Mobile App Developer with 6+ years of experience specializing in Android (Kotlin, Java) and Flutter (Dart) for cross-platform development. Skilled in Jetpack Compose, UI/UX implementation, and scalable app architecture for both mobile and TV platforms. Passionate about writing clean, efficient code and delivering high-quality, user-focused applications. Known for analyzing design structures, optimizing performance, and driving innovation through collaborative problem-solving.",
+            "Bhanit Gaurav is a versatile Mobile App Developer with 6+ years of experience specializing in Android (Kotlin, Java) and Flutter (Dart) for cross-platform development. Skilled in Jetpack Compose, UI/UX implementation, and scalable app architecture for both mobile and TV platforms. Passionate about writing clean, efficient code and delivering high-quality, user-focused applications. Known for analyzing design structures, optimizing performance, and driving innovation through collaborative problem-solving.",
     },
     skills: {
         languages: ["Kotlin", "Java", "Dart", "XML", "Coroutines", "Flow"],
