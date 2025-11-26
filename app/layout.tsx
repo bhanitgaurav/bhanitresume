@@ -28,36 +28,146 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google-site-verification-code", // Placeholder for actual code
+    google: "googled8eb3188e4363998",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Bhanit Gaurav",
-  url: "https://www.bhanit.com",
-  sameAs: [
-    "https://www.linkedin.com/in/bhanitgaurav/",
-    "https://github.com/bhanitgaurav",
-    "https://twitter.com/BhanitGaurav",
-    "https://medium.com/@bhanitgaurav",
-    "https://www.facebook.com/bhanit.gaurav",
-    "https://www.instagram.com/bhanitgaurav/",
-  ],
-  jobTitle: "Senior Mobile App Developer",
-  worksFor: {
-    "@type": "Organization",
-    name: "Fundly.ai",
-  },
-  description: "Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP.",
-  image: "https://www.bhanit.com/icon", // Assuming icon is available
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Pune",
-    addressRegion: "Maharashtra",
-    addressCountry: "India",
-  },
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.bhanit.com/#website",
+      "url": "https://www.bhanit.com",
+      "name": "Bhanit Gaurav Portfolio",
+      "description": "Portfolio of Bhanit Gaurav, a Senior Mobile App Developer.",
+      "publisher": {
+        "@id": "https://www.bhanit.com/#person"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://www.bhanit.com/#profile",
+      "url": "https://www.bhanit.com",
+      "name": "Bhanit Gaurav",
+      "isPartOf": {
+        "@id": "https://www.bhanit.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://www.bhanit.com/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.bhanit.com/#person",
+      "name": "Bhanit Gaurav",
+      "url": "https://www.bhanit.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/bhanitgaurav/",
+        "https://github.com/bhanitgaurav",
+        "https://twitter.com/BhanitGaurav",
+        "https://medium.com/@bhanitgaurav",
+        "https://www.facebook.com/bhanit.gaurav",
+        "https://www.instagram.com/bhanitgaurav/"
+      ],
+      "jobTitle": "Senior Mobile App Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Fundly.ai"
+      },
+      "description": "Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP. Expert in building high-performance mobile applications.",
+      "image": "https://www.bhanit.com/tapthegrey.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "email": "bhanit.gaurav@gmail.com",
+      "knowsLanguage": ["English", "Hindi"],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "IMS Noida",
+          "sameAs": "https://imsnoida.in/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Dr. APJ Abdul Kalam Technical University"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Android Internship",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "N.I.E.L.I.T."
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Flutter & Dart The Complete Guide",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Udemy"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "C Training",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IIT Bombay"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Android Development",
+        "Flutter Development",
+        "Kotlin Multiplatform",
+        "Jetpack Compose",
+        "Mobile App Architecture",
+        "Clean Architecture",
+        "MVVM",
+        "Dart",
+        "Kotlin",
+        "Java",
+        "Firebase",
+        "CI/CD",
+        "Google Play Store Deployment",
+        "App Store Deployment"
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Fundly",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Android, iOS",
+          "description": "A fintech mobile application built for pharma retailers and distributors."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "TapTheGrey",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "Android",
+          "description": "An engaging and fast-paced static game.",
+          "url": "https://www.bhanit.com/tapthegrey"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "AthanCare App",
+          "applicationCategory": "MedicalApplication",
+          "operatingSystem": "Android",
+          "description": "Standalone doctor application built with modern Android technologies."
+        }
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({
