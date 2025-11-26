@@ -77,7 +77,11 @@ const jsonLd = {
         "name": "Fundly.ai"
       },
       "description": "Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP. Expert in building high-performance mobile applications.",
-      "image": "https://www.bhanit.com/tapthegrey.png",
+      "image": [
+        "https://www.bhanit.com/profile.jpeg",
+        "https://www.bhanit.com/profile2.jpeg",
+        "https://www.bhanit.com/profile3.jpeg"
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Mumbai",

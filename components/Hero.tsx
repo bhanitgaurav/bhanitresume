@@ -1,10 +1,11 @@
 
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { portfolioData } from "@/data/portfolio";
 import { ArrowDown, Github, Linkedin, Mail, Twitter, MessageCircle, BookOpen, FileText } from "lucide-react";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 // Define an extended type for personalInfo to include new fields without changing the data file structure immediately if not typed
 interface PersonalInfo {
@@ -22,6 +23,40 @@ interface PersonalInfo {
     resume?: string;
     summary: string;
 }
+
+const images = ["/profile.jpeg", "/profile2.jpeg", "/profile3.jpeg"];
+
+function ProfileImageSlider() {
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIndex((prev) => (prev + 1) % images.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
+
+    return (
+        <div className="relative w-full h-full">
+            <AnimatePresence mode="wait">
+                <motion.img
+                    key={index}
+                    src={images[index]}
+                    alt={`Bhanit Gaurav - Profile Picture ${index + 1}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{
+                        objectPosition: index === 1 ? "90% center" : index === 2 ? "5% center" : "center center"
+                    }}
+                />
+            </AnimatePresence>
+        </div>
+    );
+}
+
 
 export default function Hero() {
     const { personalInfo } = portfolioData as { personalInfo: PersonalInfo };
@@ -51,6 +86,13 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
+                    <div className="mb-8 relative w-32 h-32 mx-auto">
+                        <div className="absolute inset-0 bg-gradient-to-tr from-primary to-purple-500 rounded-full blur-lg opacity-50 animate-pulse" />
+                        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-background shadow-xl">
+                            <ProfileImageSlider />
+                        </div>
+                    </div>
+
                     <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">Hello, I&apos;m</h2>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
                         {personalInfo.name}
