@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bhanit.com"),
   title: "Bhanit - Mobile App Developer | Bhanit Gaurav",
   description: "Portfolio of Bhanit (Bhanit Gaurav), a Senior Mobile App Developer specializing in Android (Kotlin), Flutter (Dart), and KMP. View projects, skills, and experience.",
   keywords: ["bhanit", "bhanit gaurav", "bhanit android", "bhanit flutter", "bhanit kotlin", "mobile developer", "android developer", "flutter developer"],
