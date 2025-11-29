@@ -21,9 +21,19 @@ export const metadata: Metadata = {
     siteName: "Bhanit Gaurav Portfolio",
   },
   alternates: {
-    canonical: "https://www.bhanit.com",
     languages: {
       "en-US": "https://www.bhanit.com",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
