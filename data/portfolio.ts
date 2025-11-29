@@ -234,6 +234,14 @@ export const portfolioData = {
             link: "/tapthegrey",
         },
     ],
+    onlineTools: [
+        {
+            name: "JSON to TOON",
+            description: "A powerful tool to convert JSON data into TOON format, optimized for AI and LLM workloads.",
+            link: "/jsontotoon",
+            icon: "FileJson",
+        },
+    ],
     articles: [
         {
             title: "What is TOON? An Optimized Serialization Format for AI and LLM Workloads",

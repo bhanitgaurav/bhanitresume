@@ -14,6 +14,7 @@ export default function Navbar() {
                     <Link href="#skills" className="hover:text-primary transition-colors">Skills</Link>
                     <Link href="#experience" className="hover:text-primary transition-colors">Experience</Link>
                     <Link href="#projects" className="hover:text-primary transition-colors">Projects</Link>
+                    <Link href="#tools" className="hover:text-primary transition-colors">Tools</Link>
                     <Link href="#articles" className="hover:text-primary transition-colors">Articles</Link>
                     <Link href="#education" className="hover:text-primary transition-colors">Education</Link>
                     <Link href="#contact" className="hover:text-primary transition-colors">Contact</Link>
