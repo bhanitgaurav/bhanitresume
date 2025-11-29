@@ -236,6 +236,12 @@ export const portfolioData = {
     ],
     articles: [
         {
+            title: "What is TOON? An Optimized Serialization Format for AI and LLM Workloads",
+            description: "An in-depth look at TOON, a new serialization format designed for efficiency in AI applications.",
+            link: "https://medium.com/@bhanitgaurav/what-is-toon-an-optimized-serialization-format-for-ai-and-llm-workloads-8e1f0a0a9449",
+            date: "Nov 29, 2025",
+        },
+        {
             title: "How I Built a JSON to Toon Converter Without Writing a Single Line of Code (Thanks to Antigravity)",
             description: "A story about leveraging AI tools to build a creative project efficiently.",
             link: "https://bhanitgaurav.medium.com/how-i-built-a-json-to-toon-converter-without-writing-a-single-line-of-code-thanks-to-antigravity-1fe737f32546",
