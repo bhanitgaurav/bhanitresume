@@ -5,7 +5,7 @@ export default function JsonToToonPage() {
                 src="https://free-json-to-toon.vercel.app"
                 className="w-full h-full border-none"
                 title="JSON to TOON"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-read; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
             />
         </div>
