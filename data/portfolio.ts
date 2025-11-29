@@ -238,7 +238,7 @@ export const portfolioData = {
         {
             name: "JSON to TOON",
             description: "A powerful tool to convert JSON data into TOON format, optimized for AI and LLM workloads.",
-            link: "/jsontotoon",
+            link: "https://jsontotoon.bhanit.com",
             icon: "FileJson",
         },
     ],
